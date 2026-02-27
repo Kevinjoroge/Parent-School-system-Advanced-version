@@ -10,4 +10,6 @@ session_destroy();
 /* Redirect to main login page */
 header("Location: index.php");
 exit();
+
+
 ?>
