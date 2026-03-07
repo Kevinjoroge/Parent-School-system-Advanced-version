@@ -81,3 +81,8 @@ while($row = mysqli_fetch_assoc($result)){
 ?>
 
 </table>
+
+<hr>
+<br>
+
+<a href="admin_dashboard.php"><button>Back</button></a>

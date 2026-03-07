@@ -83,8 +83,11 @@ if(isset($_POST['class_id']) && $_POST['class_id']!=""){
 <label>Message:</label><br>
 <textarea name="message" required></textarea><br><br>
 
-<button type="submit" name="send">Send Message</button>
+<button type="submit" name="send">Send</button><hr>
 <br>
-<li><a href="teacher_inbox.php">inbox</a></li>
-
 </form>
+<a href="teacher_inbox.php"><button>inbox</button></a>
+
+<hr>
+<br>
+<a href="teacher_dashboard.php"><button>Back</button></a>

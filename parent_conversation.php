@@ -77,3 +77,7 @@ while($row = mysqli_fetch_assoc($chat)){
 <textarea name="message" required style="width:100%; height:60px;"></textarea><br><br>
 <button type="submit" name="send">Send</button>
 </form>
+
+<hr>
+<br>
+<a href="parent_inbox.php"><button>Back</button></a>

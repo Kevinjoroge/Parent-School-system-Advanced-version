@@ -96,9 +96,11 @@ if(mysqli_num_rows($attendance) > 0){
 
 </table>
 
-<br><hr>
-<a href="parent_dashboard.php">⬅ Back to Dashboard</a> |
-<a href="logout.php">🚪 Logout</a>
+<br>
+
+<hr>
+<br>
+<a href="parent_dashboard.php"><button>Back</button></a>
 
 </body>
 </html>

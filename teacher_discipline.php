@@ -99,11 +99,12 @@ echo "<option value='".$st['id']."'>".$st['name']." (".$st['admission_no'].")</o
 
 <br><br>
 
-<button name="submit_report">Submit Report</button>
+<button name="submit_report">Submit</button>
 
 </form>
 
 <?php } ?>
 
-<br><hr>
-<a href="teacher_dashboard.php">⬅ Back to Dashboard</a>
+<hr>
+<br>
+<a href="teacher_dashboard.php"><button>Back</button></a>

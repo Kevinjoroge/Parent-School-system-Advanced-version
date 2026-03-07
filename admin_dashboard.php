@@ -37,8 +37,12 @@ include('config/db.php');
 
 <h3>Reports & Announcements</h3>
 
-<a href="reports.php"><button>Generate Reports</button></a>
+<a href="admin_reports.php"><button>Generate Reports</button></a>
 <br><br>
 <a href="admin_announcements.php"><button>Post Announcements</button></a>
 <br><br>
-<a href="logs.php"><button>View System Logs</button></a>
+<a href="admin_view_logs.php"><button>View System Logs</button></a>
+
+<hr>
+<br>
+<a href="logout.php"><button>Logout</button></a>

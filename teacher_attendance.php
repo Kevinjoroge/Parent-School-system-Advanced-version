@@ -79,3 +79,7 @@ $students = mysqli_query($conn,"SELECT * FROM students WHERE class_id='$class_id
 <?php } ?>
 
 </form>
+
+<hr>
+<br>
+<a href="teacher_dashboard.php"><button>Back</button></a>

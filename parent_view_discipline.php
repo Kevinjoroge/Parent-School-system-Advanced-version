@@ -48,5 +48,8 @@ echo "</tr>";
 
 echo "</table>";
 
-echo "<br><a href='parent_dashboard.php'>⬅ Back</a>";
 ?>
+
+<hr>
+<br>
+<a href='parent_dashboard.php'><button>Back</button></a>

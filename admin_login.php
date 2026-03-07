@@ -29,3 +29,7 @@ if(isset($_POST['login'])){
 <input type="password" name="password" placeholder="Password" required><br><br>
 <button name="login">Login</button>
 </form>
+<hr>
+<br>
+
+<a href="index.php"><button>Back</button></a>

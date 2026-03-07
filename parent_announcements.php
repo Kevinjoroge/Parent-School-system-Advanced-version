@@ -14,7 +14,7 @@ $announcements = mysqli_query($conn,"
 ");
 ?>
 
-<h2>School Announcements</h2>
+<h2>Announcements and Events</h2>
 <hr>
 
 <?php
@@ -36,5 +36,6 @@ if(mysqli_num_rows($announcements) > 0){
 }
 ?>
 
+<hr>
 <br>
-<a href="parent_dashboard.php"><button>Back to Dashboard</button></a>
+<a href="parent_dashboard.php"><button>Back</button></a>

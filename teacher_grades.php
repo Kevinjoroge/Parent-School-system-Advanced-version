@@ -93,7 +93,7 @@ table, th, td { border: 1px solid black; padding: 6px; }
 </head>
 <body>
 
-<h2>Grade Entry Module</h2>
+<h2>Entre Scores</h2>
 <hr>
 
 <form method="POST">
@@ -205,7 +205,7 @@ if(isset($_POST['load'])){
 ?>
 
 <br><hr>
-<a href="teacher_dashboard.php">⬅ Back to Dashboard</a>
+<a href="teacher_dashboard.php"><button>Back<button></a>
 
 </body>
 </html>

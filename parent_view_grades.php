@@ -157,7 +157,7 @@ if($selected_term && $selected_exam && $class_id && !$has_incomplete){
 }
 ?>
 
-<h2>View Grades</h2>
+<h2>Results</h2>
 
 <form method="POST">
     <label>Term:</label>
@@ -213,3 +213,7 @@ if($selected_term && $selected_exam && $class_id && !$has_incomplete){
         <p><strong>Class Position:</strong> N/A (Incomplete grade present)</p>
     <?php endif; ?>
 <?php endif; ?>
+
+<hr>
+<br>
+<a href='parent_dashboard.php'><button>Back</button></a>

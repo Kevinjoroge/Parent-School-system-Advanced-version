@@ -28,9 +28,13 @@ if(mysqli_num_rows($query) > 0){
         echo "<b>Student:</b> ".$row['student_name']."<br>";
         echo "<b>Message:</b> ".$row['message']."<br>";
         echo "<b>Date:</b> ".$row['created_at']."<br>";
-        echo "<a href='teacher_conversation.php?student_id=".$row['student_id']."'>View Conversation</a>";
+        echo "<a href='teacher_conversation.php?student_id=".$row['student_id']."'><button>View Conversation</button></a>";
     }
 } else {
     echo "No messages yet.";
 }
 ?>
+
+<hr>
+<br>
+<a href="teacher_message.php"><button>Back</button></a>

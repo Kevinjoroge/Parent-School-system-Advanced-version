@@ -68,6 +68,16 @@ if(isset($_POST['login'])){
             $_SESSION['role'] = $user['role'];
             $_SESSION['username'] = $user['username'];
 
+            /* ===========================
+               RECORD LOGIN ACTIVITY
+               =========================== */
+            $teacher_id = $user['teacher_id'];
+
+            mysqli_query($conn,"
+                INSERT INTO system_logs(user_role,user_id,activity)
+                VALUES('teacher','$teacher_id','Logged into the system')
+            ");
+
             header("Location: teacher_dashboard.php");
             exit();
 
@@ -90,3 +100,7 @@ if(isset($_POST['login'])){
     <button type="submit" name="login">Login</button>
     <button type="submit" name="register">Register First Time</button>
 </form>
+<hr>
+<br>
+
+<a href="index.php"><button>Back</button></a>

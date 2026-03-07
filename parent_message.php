@@ -29,7 +29,7 @@ if(isset($_POST['send'])){
 }
 ?>
 
-<h2>Message Teacher</h2>
+<h2>Message</h2>
 
 <form method="POST">
 
@@ -49,10 +49,10 @@ while($t=mysqli_fetch_assoc($teachers)){
 
 <button name="send">Send</button>
 <br>
-
-<li><a href="parent_inbox.php">inbox</a></li>
+<hr>
 
 </form>
-
+<a href="parent_inbox.php"><button>inbox</button></a>
+<hr>
 <br>
 <a href="parent_dashboard.php"><button>Back</button></a>

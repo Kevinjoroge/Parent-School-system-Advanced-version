@@ -73,3 +73,6 @@ while($row = mysqli_fetch_assoc($chat)){
 <textarea name="message" required style="width:100%; height:60px;"></textarea><br><br>
 <button type="submit" name="send">Send</button>
 </form>
+
+<br>
+<a href="teacher_inbox.php"><button>Back</button></a>

@@ -10,7 +10,7 @@ if(!isset($_SESSION['role']) || $_SESSION['role'] != 'parent'){
 $parent_id = $_SESSION['user_id']; // parent uses users.id
 ?>
 
-<h2>Parent Inbox</h2>
+<h2>Inbox</h2>
 
 <?php
 $query = mysqli_query($conn,"
@@ -28,9 +28,13 @@ if(mysqli_num_rows($query) > 0){
         echo "<b>Student:</b> ".$row['student_name']."<br>";
         echo "<b>Message:</b> ".$row['message']."<br>";
         echo "<b>Date:</b> ".$row['created_at']."<br>";
-        echo "<a href='parent_conversation.php?student_id=".$row['student_id']."'>View Conversation</a>";
+        echo "<a href='parent_conversation.php?student_id=".$row['student_id']."'><button>View Conversation</button></a>";
     }
 } else {
     echo "No messages yet.";
 }
 ?>
+
+<hr>
+<br>
+<a href="parent_message.php"><button>Back</button></a>

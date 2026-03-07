@@ -43,3 +43,8 @@ Event Date (Optional):<br>
 
 <button name="post">Post Announcement</button>
 </form>
+
+<hr>
+<br>
+
+<a href="admin_dashboard.php"><button>Back</button></a>

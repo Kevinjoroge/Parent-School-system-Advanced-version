@@ -2,10 +2,12 @@
 session_start();
 include('config/db.php');
 
-/* REGISTER PARENT */
+/* =========================
+   REGISTER PARENT
+   ========================= */
 if(isset($_POST['register'])){
 
-    $adm = $_POST['username'];
+    $adm = mysqli_real_escape_string($conn,$_POST['username']);
     $pass = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     $check = mysqli_query($conn,
@@ -26,10 +28,13 @@ if(isset($_POST['register'])){
     }
 }
 
-/* LOGIN PARENT */
+
+/* =========================
+   LOGIN PARENT
+   ========================= */
 if(isset($_POST['login'])){
 
-    $adm = $_POST['username'];
+    $adm = mysqli_real_escape_string($conn,$_POST['username']);
     $pass = $_POST['password'];
 
     $query = mysqli_query($conn,
@@ -41,10 +46,25 @@ if(isset($_POST['login'])){
 
     if($user && password_verify($pass,$user['password'])){
 
-        // SET SESSION VARIABLES
+        /* GET STUDENT ID */
+        $student_query = mysqli_query($conn,
+            "SELECT id FROM students WHERE admission_no='$adm'"
+        );
+
+        $student = mysqli_fetch_assoc($student_query);
+        $student_id = $student['id'];
+
+        /* SET SESSION */
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['role'] = 'parent';
         $_SESSION['admission_no'] = $adm;
+        $_SESSION['student_id'] = $student_id;
+
+        /* RECORD SYSTEM LOG */
+        mysqli_query($conn,"
+            INSERT INTO system_logs(user_role,user_id,activity)
+            VALUES('parent','$student_id','Parent logged into the system')
+        ");
 
         header("Location: parent_dashboard.php");
         exit();
@@ -64,3 +84,8 @@ if(isset($_POST['login'])){
 <button name="login">Login</button>
 <button name="register">Register First Time</button>
 </form>
+
+<hr>
+<br>
+
+<a href="index.php"><button>Back</button></a>

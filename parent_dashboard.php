@@ -52,19 +52,19 @@ if(!$student){
 <h3>Modules</h3>
 
 
-<a href="parent_view_attendance.php"><button>View Attendance</button></a>
+<a href="parent_view_attendance.php"><button>Attendance Records</button></a>
 <br>
 <br>
-<a href="parent_view_grades.php"><button>View Grades</button></a>
+<a href="parent_view_grades.php"><button>Results</button></a>
 <br>
 <br>
-<a href="parent_view_discipline.php"><button>View Discipline Records</button></a>
+<a href="parent_view_discipline.php"><button>Discipline Records</button></a>
 <br>
 <br>
-<a href="parent_announcements.php"><button>View Announcements</button></a>
+<a href="parent_announcements.php"><button>Announcements and Events</button></a>
 <br>
 <br>
-<a href="parent_message.php"><button>Messaging</button></a>
+<a href="parent_message.php"><button>Message Module</button></a>
 <br>
 <br>
 <a href="parent_fees.php"><button>Fees Status</button></a>

@@ -36,5 +36,6 @@ if(mysqli_num_rows($announcements) > 0){
 }
 ?>
 
+<hr>
 <br>
-<a href="teacher_dashboard.php">⬅ Back to Dashboard</a>
+<a href="teacher_dashboard.php"><button>Back</button></a>

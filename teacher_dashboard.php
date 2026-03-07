@@ -22,15 +22,15 @@ if(!isset($_SESSION['role']) || $_SESSION['role'] != 'teacher'){
 <h3>Classroom Management Modules</h3>
 
 
-    <a href="teacher_attendance.php"><button>Mark Attendance</button></a>
+    <a href="teacher_attendance.php"><button>Record Attendance</button></a>
     <br><br>
-    <a href="teacher_grades.php"><button>Update </button></a>
+    <a href="teacher_grades.php"><button>Update Scores </button></a>
     <br><br>
     <a href="teacher_discipline.php"><button>Record Discipline Cases</button></a>
     <br><br>
-    <a href="teacher_announcements.php"><button>View Announcements</button></a>
+    <a href="teacher_announcements.php"><button>Announcements and Events</button></a>
     <br><br>
-    <a href="teacher_message.php"><button>Send / Receive Messages</button></a>
+    <a href="teacher_message.php"><button>Message Module</button></a>
 
 
 <hr>
