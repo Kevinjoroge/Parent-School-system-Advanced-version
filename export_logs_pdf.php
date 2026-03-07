@@ -2,6 +2,7 @@
 include('config/db.php');
 
 require('fpdf/fpdf.php');
+ob_clean();
 
 $pdf = new FPDF();
 $pdf->AddPage();

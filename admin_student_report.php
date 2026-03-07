@@ -26,6 +26,10 @@ $student_id = $student['id'];
 ?>
 
 <h2>Student Report</h2>
+<button onclick="window.print()">Print</button>
+<a href="export_student_report_excel.php?admission_no=<?php echo $student['admission_no']; ?>">
+<button>Download Excel</button>
+</a>
 
 <h3>Student Information</h3>
 
@@ -150,7 +154,6 @@ echo "<h3>Mean Grade Point: ".round($mean,2)."</h3>";
 }
 
 ?>
-
-<br><br>
-
-<a href="admin_reports.php">⬅ Back</a>
+<hr>
+<br><
+<a href="admin_reports.php"><button>Back</button></a>
