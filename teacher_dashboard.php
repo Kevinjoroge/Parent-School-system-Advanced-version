@@ -181,7 +181,7 @@ $photo_path = !empty($teacher['profile_photo']) ? "uploads/profile_pics/" . $tea
         <a href="teacher_discipline.php" style="text-decoration:none;"><div class="tile"><span>Discipline Cases</span></div></a>
         <a href="teacher_announcements.php" style="text-decoration:none;"><div class="tile"><span>School Events</span></div></a>
         <a href="teacher_message.php" style="text-decoration:none;"><div class="tile"><span>Messaging</span></div></a>
-        <a href="teacher_class_announcements.php" style="text-decoration:none;"><div class="tile"><span>Class Feed</span></div></a>
+        <a href="teacher_class_announcements.php" style="text-decoration:none;"><div class="tile"><span>Class Announcements</span></div></a>
     </div>
 </div>
 
