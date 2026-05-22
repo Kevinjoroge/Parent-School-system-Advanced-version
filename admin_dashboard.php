@@ -165,6 +165,7 @@ include('config/db.php');
             <a href="admin_announcements.php" class="menu-link">Post Announcements</a>
             <a href="admin_view_logs.php" class="menu-link">View System Logs</a>
             <a href="admin_post_fees.php" class="menu-link">Post Fees Structure</a>
+            <a href="admin_academic_performance.php" class="menu-link">Academic Performance Analysis</a>
         </div>
 
     </div>

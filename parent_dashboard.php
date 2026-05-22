@@ -254,6 +254,8 @@ $photo_path = !empty($student['profile_photo']) ? "uploads/profile_pics/" . $stu
         <a href="parent_announcements.php"><button>School Events</button></a>
         <a href="parent_fee_statement.php"><button>Financial Status</button></a>
         <a href="parent_message.php"><button>Messaging</button></a>
+        <a href="parent_academic_performance.php"><button>Academic Performance Analysis</button></a>
+        
     </div>
 </div>
 
